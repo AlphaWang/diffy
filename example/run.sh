@@ -21,8 +21,9 @@ then
     -serviceName='My Service' \
     -proxy.port=:8880 \
     -admin.port=:8881 \
-    -http.port=:8888 \
-    -rootUrl='localhost:8888' &\
+    -http.port=:8882 \
+    -responseMode='candidate' \
+    -rootUrl='localhost:8882' &\
 
     sleep 3
     echo "Wait for Diffy to deploy"
